@@ -1,0 +1,17 @@
+<html>
+<body>
+  <input id="time" type="number" placeholder="Enter time in seconds">
+  <button id="start">Start Game!</button>
+  <button id="reset">Reset Game</button>
+  <p id="s-count">S count: 0</p>
+  <p id="l-count">L count: 0</p>
+  <p id="message"></p>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+  <script src="main.js"></script>
+  <canvas id="my-canvas"></canvas>
+  <script>
+    const confettiSettings = { target: 'my-canvas' };
+    const confetti = new ConfettiGenerator(confettiSettings);
+  </script>
+</body>
+</html>
